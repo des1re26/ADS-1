@@ -1,5 +1,7 @@
-#include <cstdlib>
+// Copyright 2024 <Student>
+
 #include "alg.h"
+#include <cstdlib>
 #include <cmath>
 
 bool checkPrime(uint64_t value) {
@@ -11,12 +13,12 @@ bool checkPrime(uint64_t value) {
     for (uint64_t i = 5; i <= limit; i += 6) {
         if (value % i == 0 || value % (i + 2) == 0) return false;
     }
-
     return true;
 }
 
 uint64_t nPrime(uint64_t n) {
     if (n == 0) return 0;
+
     uint64_t count = 0;
     uint64_t num = 1;
 
